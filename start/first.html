@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>my start with avalon</title>
+	<link rel="stylesheet" href="src/css/bootstrap.css">
+	<link rel="stylesheet" href="src/css/start.css">
+</head>
+<body>
+	<!-- ms-controller:可以嵌套，当本层次vm没有定义相应属性时，会寻找上层属性
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12" ms-controller="first">
+				<p class="text-muted">{{name}}:{{color}}</p>
+				<div class="col-md-12" ms-controller="second">
+					<p class="text-primary">{{name}}:{{color}}</p>
+					<div class="col-md-12" ms-controller="third">
+						<p class="text-danger">{{name}}:{{color}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	<!--  ms-important:不向上寻找
+	<div class="container">
+			<div class="row">
+				<div class="col-md-12" ms-controller="first">
+					<p class="text-muted">{{name}}:{{color}}</p>
+					<div class="col-md-12" ms-controller="second">
+						<p class="text-primary">{{name}}:{{color}}</p>
+						<div class="col-md-12" ms-important="special">
+							<p class="text-danger">{{name}}:{{color}}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div> -->
+	<!-- ms-skip跳过插值表达式<div class="container">
+		<div class="row">
+			<div class="col-md-12" ms-controller="first">
+				<p class="text-muted">{{name}}:{{color}}</p>
+				<div class="col-md-12" ms-controller="second">
+					<p class="text-primary">{{name}}:{{color}}</p>
+					<div class="col-md-12" ms-controller="fourth">
+						<p class="text-danger">{{name}}:{{color}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div> -->
+	<!-- <div class="container">
+		<div class="row">
+			<div class="col-md-12" ms-controller="prop">
+				<p class="text-muted" ms-text="content"></p>
+				<p class="text-muted" ms-html="content"></p>
+			</div>
+		</div>
+	</div> -->
+
+	<!-- <div class="input-group" ms-controller="value">
+		<input type="text" class="form-control" ms-value="content">
+		<input type="text" class="form-control" ms-value="test {{content+' !'}}">
+	</div> -->
+
+	<div class="page-header">
+		<div>{{'Cynthia'|findName}}</div>
+	</div>
+	<script src="src/js/jquery-2.1.4.js"></script>
+	<script src="src/js/bootstrap.js"></script>
+	<script src="src/js/avalon.js"></script>
+	<script src="src/js/start.js"></script>
+</body>
+</html>

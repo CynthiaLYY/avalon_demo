@@ -1,0 +1,15 @@
+*{
+	font-size: 20px;
+	pading: 20px;
+	margin: 20px;
+}
+.show_data{
+	width:250px;
+	height:30px;
+	border-radius:10px;
+	box-shadow:3px 3px 5px #aaa;
+	background-color:#FF96D7;
+	text-align: center;
+	vertical-align: center;
+	padding:0;
+}

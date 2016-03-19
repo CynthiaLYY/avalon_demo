@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>know about avalon</title>
+	<link rel="stylesheet" href="src/css/bootstrap.css">
+	<link rel="stylesheet" href="src/css/know_about.css">
+</head>
+<body>
+	
+	<div class="input-group" ms-controller="duplex">
+		<!-- <input type="radio" ms-duplex-text="gender" value="male">男
+		<input type="radio" ms-duplex-text="gender" value="female">女
+		<select name="lang" ms-duplex="lang" multiple="true">
+			<option value="Chinese">Chinese</option>
+			<option value="English">English</option>
+			<option value="Japanese">Japanese</option>
+		</select>
+		<select name="city" ms-duplex="city">
+			<option value="Hebei">Hebei</option>
+			<option value="NewYork">NewYork</option>
+			<option value="Tokyo">Tokyo</option>
+		</select>
+		<input type="checkbox" ms-duplex="hobbies" value="book">book
+		<input type="checkbox" ms-duplex="hobbies" value="movie">movie
+		<input type="checkbox" ms-duplex="hobbies" value="music">music
+		<div>{{gender}}</div>
+		<div>{{lang}}</div>
+		<div>{{city}}</div>
+		<div>{{hobbies}}</div> -->
+		<input type="radio" ms-duplex-boolean="choose" value="true">是
+		<input type="radio" ms-duplex-boolean="choose" value="false">否
+		<div>{{choose}}</div>
+	</div>
+	<script src="src/js/jquery-2.1.4.js"></script>
+	<script src="src/js/bootstrap.js"></script>
+	<script src="src/js/avalon.js"></script>
+	<script src="src/js/know_about.js"></script>
+</body>
+</html>
